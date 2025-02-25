@@ -32,7 +32,7 @@ func main() {
 	}
 	sort.Strings(dirFiles)
 
-	for i := 0; i < len(dirFiles); i++ {
+	for i := range dirFiles {
 		fmt.Printf(": %s :\n", dirFiles[i])
 	}
 }
